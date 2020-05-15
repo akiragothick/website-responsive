@@ -1,0 +1,99 @@
+
+@media screen and (max-width:600px) {
+
+    .title {
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .container-header {
+        height: 650px;
+    }
+
+    .container-header img {
+        width: 250px;
+    }
+
+    .nav {
+        padding: 0 10px;
+    }
+
+    .links {
+        position: fixed;
+        background: linear-gradient(to right top, #eebab0, #e9b5ae, #e3afad, #ddaaab, #d7a5a9, #d1a1a8, #cb9ca6, #c598a5, #be93a3, #b68fa1, #af8a9e, #a7869c);
+        background: -webkit-gradient(linear, left bottom, right top, from(#eebab0), color-stop(#e9b5ae), color-stop(#e3afad), color-stop(#ddaaab), color-stop(#d7a5a9), color-stop(#d1a1a8), color-stop(#cb9ca6), color-stop(#c598a5), color-stop(#be93a3), color-stop(#b68fa1), color-stop(#af8a9e), to(#a7869c));
+        background: -o-linear-gradient(left bottom, #eebab0, #e9b5ae, #e3afad, #ddaaab, #d7a5a9, #d1a1a8, #cb9ca6, #c598a5, #be93a3, #b68fa1, #af8a9e, #a7869c);background: linear-gradient(to right top, #eebab0, #e9b5ae, #e3afad, #ddaaab, #d7a5a9, #d1a1a8, #cb9ca6, #c598a5, #be93a3, #b68fa1, #af8a9e, #a7869c);
+
+        top:0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        -webkit-clip-path: circle(0.0% at 100% 0);
+        clip-path: circle(0.0% at 100% 0);
+    }
+
+    .nav .links-complete {
+        -webkit-clip-path: circle(141.2% at 100% 0);
+        clip-path: circle(141.2% at 100% 0);
+    }
+
+    .links a {
+        color:#fff;
+    }
+
+    .icon-nav-mobile{
+        display: block;
+    }
+
+
+
+    /* About us */
+
+    .article {
+        width: 95%;
+    }
+
+    /* Questions */
+
+    .questions img {
+        width: 250px;
+    }
+
+    /* Results */
+
+    .numbers .number {
+        width: 95%;
+    }
+
+    .results-text h4 {
+        font-size: 35px;
+    }
+
+    /* Services */
+
+    .services img {
+        width: 250px;
+    }
+
+    .box-skills {
+        width: 80%;
+    }
+
+    .box-skills h4 {
+        width: 100%;
+    }
+
+    .partFooter {
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+}
