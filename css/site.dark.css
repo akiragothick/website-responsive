@@ -1,0 +1,43 @@
+
+body.dark {
+
+    --eysan-color1: #EEBAB0;
+    --eysan-color2: #EEBAB0;
+    --eysan-color3: #EEBAB0;
+    --eysan-color4: #EEBAB0; 
+    --eysan-color5: #CE9EA7; 
+    --eysan-color6: #2F4858; 
+    --eysan-color7: #3E3D3D;
+
+    --eysan-darkmode: #333;
+}
+
+.dark-mode.active {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 0px 2px 2px #fff;
+}
+
+.dark .icon-nav-mobile {
+    color: #fff;
+}
+
+.dark .results {
+    background-color: var(--eysan-color7);
+}
+
+.dark .box-skills h4 {
+    background-color: var(--eysan-color7);
+}
+
+.dark footer {
+    background: var(--eysan-darkmode);
+    box-shadow: 0px -8px 10px 0 rgb(0,0,0,.2);
+}
+
+
+@media screen and (max-width:600px) {
+    .dark .container-menu {
+        background: var(--eysan-color7)!important;
+    }
+}

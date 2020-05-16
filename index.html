@@ -7,83 +7,93 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eysan Store</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/site.dark.css">
     <link rel="stylesheet" href="/css/site.tablet.css">
     <link rel="stylesheet" href="/css/site.mobile.css">
-    <script src="https://kit.fontawesome.com/bc55e8a9a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/site.slides.css">
+
+    <script src="https://kit.fontawesome.com/bc55e8a9a4.js" crossorigin="anonymous" defer></script>
+
     <script src="js/site.js" defer></script>
+    <script src="js/site.nav.js" defer></script>
+    <script src="js/site.menu.js" defer></script>
+    <script src="js/site.slides.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <section class="container nav">
+            <section class="container container-nav">
                 <div class="logo">
-                    <img src="img/AddToCart.svg" alt="">
+                    <img src="img/SuccessfulPurchase.svg" alt="">
                 </div>
-                <div class="links">
+                <div class="container-menu">
                     <a href="#">Inicio</a>
-                    <a href="#">Inicio</a>
-                    <a href="#">Inicio</a>
-                    <a href="#">Inicio</a>
-                    <a href="#">Inicio</a>
+                    <a href="#">Productos</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Contactenos</a>
                 </div>
                 <div class="icon-nav-mobile">
                     <i class="fas fa-bars"></i>
                 </div>
             </section>
         </nav>
-        <section class="container">
+        <section class="container container-slides">
 
-            <input type="radio" name="image-slide" id="1" hidden>
-            <input type="radio" name="image-slide" id="2" hidden>
-            <input type="radio" name="image-slide" id="3" hidden>
-
-            <section class="slide">
-                <section class="container-header">
-                    <section class="text-header">
-                        <h1>Eysan Store</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ducimus.</p>
-                        <a href="#">Ver más</a>
+            <section class="slides">
+                <section class="item-slide fade">
+                    <section class="container-header">
+                        <section class="text-header">
+                            <h1>Eysan Store</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ducimus.</p>
+                            <a href="#">Ver más</a>
+                        </section>
+                        <img src="/img/Shopping2.svg" alt="">
                     </section>
-                    <img src="/img/Shopping2.svg" alt="">
                 </section>
-
-                <section class="container-header">
-                    <section class="text-header">
-                        <h1>Eysan Store 2</h1>
+                <section class="item-slide fade">
+                    <section class="container-header">
+                        <section class="text-header">
+                            <h1>Eysan Store 2</h1>
+                        </section>
+                        <img src="/img/AddToCart2.svg" alt="">
                     </section>
-                    <img src="/img/Shopping2.svg" alt="">
                 </section>
-
-                <section class="container-header">
-                    <section class="text-header">
-                        <h1>Eysan Store 3</h1>
-                        <a href="#">Ver más</a>
+                <section class="item-slide fade">
+                    <section class="container-header">
+                        <section class="text-header">
+                            <h1>Eysan Store 3</h1>
+                            <a href="#">Ver más</a>
+                        </section>
+                        <img src="/img/SuccessfulPurchase.svg" alt="">
                     </section>
-                    <img src="/img/Shopping2.svg" alt="">
                 </section>
             </section>
 
-            <section class="pagination">
-                <label for="1" class="pagination-item">
+            <section class="slides pagination">
+                <label class="pagination-item" data-number="1">
                     <img src="/img/Shopping2.svg" alt="">
                 </label>
-                <label for="2" class="pagination-item">
-                    <img src="/img/Shopping2.svg" alt="">
+                <label class="pagination-item" data-number="2">
+                    <img src="/img/AddToCart2.svg" alt="">
                 </label>
-                <label for="3" class="pagination-item">
-                    <img src="/img/Shopping2.svg" alt="">
+                <label class="pagination-item" data-number="3">
+                    <img src="/img/SuccessfulPurchase.svg" alt="">
                 </label>
             </section>
+
+            <a class="prev" data-number="-1">&#10094;</a>
+            <a class="next" data-number="1">&#10095;</a>
 
         </section>
     </header>
+
     <section class="about-us">
         <div class="container-about">
-            <h2 class="title">Nosotros</h2>
+            <h1 class="title">Nosotros</h2>
             <div class="container-article">
                 <div class="article">
                     <i class="fas fa-pen-fancy"></i>
@@ -173,6 +183,10 @@
             </h4>
         </div>
     </section>
+
+    <a class="dark-mode">
+        <i class="fas fa-cloud-sun"></i>
+    </a>
 
     <footer>
         <div class="partFooter">
