@@ -7,13 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eysan Store</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/css/site.css">
-    <link rel="stylesheet" href="/css/site.dark.css">
-    <link rel="stylesheet" href="/css/site.tablet.css">
-    <link rel="stylesheet" href="/css/site.mobile.css">
-    <link rel="stylesheet" href="/css/site.slides.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/site.dark.css">
+    <link rel="stylesheet" href="css/site.tablet.css">
+    <link rel="stylesheet" href="css/site.mobile.css">
+    <link rel="stylesheet" href="css/site.slides.css">
+    <link rel="stylesheet" href="css/site.modal.css">
+    <link rel="stylesheet" href="css/site.dark.css">
 
     <script src="https://kit.fontawesome.com/bc55e8a9a4.js" crossorigin="anonymous" defer></script>
 
@@ -21,6 +24,8 @@
     <script src="js/site.nav.js" defer></script>
     <script src="js/site.menu.js" defer></script>
     <script src="js/site.slides.js" defer></script>
+    <script src="js/site.modal.js" defer></script>
+    <script src="js/site.darkmode.js" defer></script>
 </head>
 
 <body>
@@ -49,7 +54,7 @@
                         <section class="text-header">
                             <h1>Eysan Store</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ducimus.</p>
-                            <a href="#">Ver más</a>
+                            <a class="open-modal" modal-target='.modal-1' href="#">Ver más</a>
                         </section>
                         <img src="/img/Shopping2.svg" alt="">
                     </section>
@@ -66,7 +71,7 @@
                     <section class="container-header">
                         <section class="text-header">
                             <h1>Eysan Store 3</h1>
-                            <a href="#">Ver más</a>
+                            <a class="open-modal" href="#">Ver más</a>
                         </section>
                         <img src="/img/SuccessfulPurchase.svg" alt="">
                     </section>
@@ -94,38 +99,38 @@
     <section class="about-us">
         <div class="container-about">
             <h1 class="title">Nosotros</h2>
-            <div class="container-article">
-                <div class="article">
-                    <i class="fas fa-pen-fancy"></i>
-                    <h3>title 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
-                    <a href="#">Leer más..</a>
+                <div class="container-article">
+                    <div class="article">
+                        <i class="fas fa-pen-fancy"></i>
+                        <h3>title 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
+                        <a href="#">Leer más..</a>
+                    </div>
+                    <div class="article">
+                        <i class="fas fa-code"></i>
+                        <h3>title 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
+                        <a href="#">Leer más..</a>
+                    </div>
+                    <div class="article">
+                        <i class="fas fa-cog"></i>
+                        <h3>title 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
+                        <a href="#">Leer más..</a>
+                    </div>
+                    <div class="article">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>title 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
+                        <a href="#">Leer más..</a>
+                    </div>
+                    <div class="article">
+                        <i class="fas fa-comment"></i>
+                        <h3>title 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
+                        <a href="#">Leer más..</a>
+                    </div>
                 </div>
-                <div class="article">
-                    <i class="fas fa-code"></i>
-                    <h3>title 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
-                    <a href="#">Leer más..</a>
-                </div>
-                <div class="article">
-                    <i class="fas fa-cog"></i>
-                    <h3>title 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
-                    <a href="#">Leer más..</a>
-                </div>
-                <div class="article">
-                    <i class="fas fa-chart-pie"></i>
-                    <h3>title 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
-                    <a href="#">Leer más..</a>
-                </div>
-                <div class="article">
-                    <i class="fas fa-comment"></i>
-                    <h3>title 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui?</p>
-                    <a href="#">Leer más..</a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -184,9 +189,23 @@
         </div>
     </section>
 
-    <a class="dark-mode">
-        <i class="fas fa-cloud-sun"></i>
-    </a>
+    <!-- The Modal -->
+    <div class="modal modal-1">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close modal-close">&times;</span>
+                <h2>Modal Header 1</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="partFooter">
