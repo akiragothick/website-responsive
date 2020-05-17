@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/site.mobile.css">
     <link rel="stylesheet" href="css/site.slides.css">
     <link rel="stylesheet" href="css/site.modal.css">
+    <link rel="stylesheet" href="css/site.modal.full.css">
+    <link rel="stylesheet" href="css/site.popup.css">
     <link rel="stylesheet" href="css/site.dark.css">
 
     <script src="https://kit.fontawesome.com/bc55e8a9a4.js" crossorigin="anonymous" defer></script>
@@ -25,6 +27,7 @@
     <script src="js/site.menu.js" defer></script>
     <script src="js/site.slides.js" defer></script>
     <script src="js/site.modal.js" defer></script>
+    <script src="js/site.modal.full.js" defer></script>
     <script src="js/site.darkmode.js" defer></script>
 </head>
 
@@ -54,7 +57,7 @@
                         <section class="text-header">
                             <h1>Eysan Store</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ducimus.</p>
-                            <a class="open-modal" modal-target='.modal-1' href="#">Ver más</a>
+                            <a >Ver más</a>
                         </section>
                         <img src="/img/Shopping2.svg" alt="">
                     </section>
@@ -71,7 +74,7 @@
                     <section class="container-header">
                         <section class="text-header">
                             <h1>Eysan Store 3</h1>
-                            <a class="open-modal" href="#">Ver más</a>
+                            <a >Ver más</a>
                         </section>
                         <img src="/img/SuccessfulPurchase.svg" alt="">
                     </section>
@@ -138,7 +141,7 @@
         <section class="text-questions">
             <h1>Eysan Store</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ducimus.</p>
-            <a href="#">Ver más</a>
+            <a class='open-modal-full' modal-target="#popup-article">Ver más</a>
         </section>
         <img src="/img/Shopping2.svg" alt="">
     </section>
@@ -166,7 +169,7 @@
             <section class="results-text">
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, at.</p>
-                <a href="#">ingrese here</a>
+                <a class="open-modal">ingrese here</a>
             </section>
         </div>
     </section>
@@ -207,6 +210,51 @@
         </div>
     </div>
 
+    <!-- The Full Modal -->
+    <div id="popup-article" class="popup">
+        <div class="popup__block">
+            dghhfhdfhdfg
+            <a class="popup__close">close</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-popup">
+            <div class="tag" onclick="this.classList.add('expand')">
+                <div class="from">
+                    <div class="from-contents">
+                        <img class="avatar me" src="img/SuccessfulPurchase.svg" alt="">
+                        <div class="name">Mikael Ainalem</div>
+                    </div>
+                </div>
+                <div class="to">
+                    <div class="to-contents">
+                        <div class="top">
+                            <img class="avatar-large me" src="img/SuccessfulPurchase.svg" alt="">
+                            <div class="name-large">Mikael Ainalem</div>
+                            <div class="x-touch"
+                                onclick="document.querySelector('.tag').classList.remove('expand');event.stopPropagation();">
+                                <div class="x">
+                                    <div class="line1"></div>
+                                    <div class="line2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="row">
+                                <img class="avatar me" src="img/SuccessfulPurchase.svg" alt="">
+                                <div class="link"><a href="https://twitter.com/mikaelainalem">@mikaelainalem</a></div>
+                            </div>
+                            <div class="row">
+                                <img class="avatar me" src="img/SuccessfulPurchase.svg" alt="">
+                                <div class="link"><a href="https://medium.com/@mikael_ainalem">@mikael_ainalem</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="partFooter">
             <img src="img/AddToCart.svg" alt="">

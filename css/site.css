@@ -18,6 +18,9 @@ body {
 
     background-color: var(--eysan-darkmode);
     transition: ease-in-out background-color var(--transition-delay-color);
+
+    -webkit-overflow-scrolling: touch;   
+    overflow-y: scroll;
 }
 
 body {
